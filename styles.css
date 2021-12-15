@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@-webkit-keyframes blinker {
+    from { opacity: 1.0; }
+    to { opacity: 0.0; }
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: block;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(233, 233, 156);
+}
+
+.button {
+    height: 75px;
+    width: 250px;
+}
+
+.timerContainer {
+    height: 100px;
+    width: 200px;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border-radius: 10px;
+    border: solid 5px rgb(39, 39, 39);
+}
+
+.timer {
+    font-size: 70px;
+    font-family: 'Share Tech Mono', monospace;
+    color: greenyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-animation-name: blinker;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: cubic-bezier(.5, 0, 1, 1);
+    -webkit-animation-duration: .9s;
+}
