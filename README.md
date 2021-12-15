@@ -10,3 +10,9 @@ The classic tomato timer, a pomodoro technique, a mini project.
 
 - CSS GRID
 - JS Timer Functionality 
+- webkit
+
+
+### Resources
+
+- https://stackoverflow.com/questions/16344354/how-to-make-blinking-flashing-text-with-css-3

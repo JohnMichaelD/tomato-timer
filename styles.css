@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
 @-webkit-keyframes blinker {
     from { opacity: 1.0; }
     to { opacity: 0.0; }
@@ -7,6 +8,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Barlow Condensed', sans-serif;
 }
 
 body {
@@ -17,18 +19,46 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: rgb(233, 233, 156);
+    background-color: #aff7b7;
+}
+
+header {
+    background-color: #000802;
+    color: #18FF34;
+    width: 100vw;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-size: 70px;
+}
+
+.buttonsContainer,
+.settingsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .button {
-    height: 75px;
+    height: 45px;
     width: 250px;
+    font-size: x-large;
+    font-family: 'Barlow Condensed', sans-serif;
+    border-radius: 6px;
+    cursor: pointer;
+    color: white;
 }
 
 .timerContainer {
     height: 100px;
     width: 200px;
-    margin: 50px;
+    margin: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,4 +78,22 @@ body {
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: cubic-bezier(.5, 0, 1, 1);
     -webkit-animation-duration: .9s;
+}
+
+.pomodoroButton,
+.shortBreakButton,
+.longBreakButton {
+    background-color: rgb(49, 174, 247);
+}
+
+.start {
+    background-color: rgb(30, 204, 39);
+}
+
+.stop {
+    background-color: red;
+}
+
+.reset {
+    background-color: gray;
 }
