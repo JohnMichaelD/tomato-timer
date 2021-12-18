@@ -162,7 +162,12 @@ a:link {
     flex-direction: column;
     gap: 10px;
 }
+
 .buttonsContainer {
     margin-top: 100px;
+}
+
+.timerContainer {
+    margin: 40px;
 }
 }
