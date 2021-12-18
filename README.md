@@ -19,9 +19,9 @@ I was inspired to build an app similar to the website; [Tomato-Timer.com](https:
     - [Useful Resources](#useful-resources)
 
 
-### Overview
+## Overview
 
-#### App Breakdown
+### App Breakdown
 
 This application is a coundown timer that assists those using the [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique). 
 
@@ -29,19 +29,19 @@ The app gives you the choice to set the timer to either 25 minutes, or a series 
 
 You can also stop the timer at anytime, re-start the timer, or reset the timer to begin the countdown again.
 
-#### Screenshot
+### Screenshot
 
 ![Screenshot](screenshot.png)
 
-#### Links
+### Links
 
 - [Live View](https://johnmichaeld.github.io/tomato-timer/)
 - [Github Repository](https://github.com/JohnMichaelD/tomato-timer)
 - [Website](johnmdarrin.com)
 
-### My Process
+## My Process
 
-#### Built With
+### Built With
 
 - Javascript ES6
 - HTML5
@@ -49,7 +49,7 @@ You can also stop the timer at anytime, re-start the timer, or reset the timer t
 - Adobe XD
 - Mobile First Design
 
-#### What I Learned
+### What I Learned
 
 - JS Timer Functionality 
 - [Webkit](https://webkit.org/)
@@ -66,7 +66,7 @@ You can also stop the timer at anytime, re-start the timer, or reset the timer t
 - clearInterval()
     - I was able to use clearInterval() to pause the timer. 
 
-#### Continued Development
+### Continued Development
 
 This was a great project, and I truly learned a lot!
 
@@ -74,7 +74,7 @@ I would like to come back to this project and add sound for when the alarm hits 
 
 I would also like to practice a bit on my CSS skills, and make the clock look more like a [retro 90's alarm clock](https://pictures.depop.com/b0/6331641/496631841_Vz5Zqg9wdm/P0.jpg)!
 
-#### Useful Resources
+### Useful Resources
 
 - [CSS Animations](https://www.youtube.com/watch?v=MLtAMg9_Svw)
 - [Query Selector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector#escaping_special_characters)
@@ -83,7 +83,7 @@ I would also like to practice a bit on my CSS skills, and make the clock look mo
 - [setTimeout()](https://stackoverflow.com/questions/8539079/how-to-start-and-stop-pause-setinterval)
 - [clearInterval()](https://www.w3schools.com/jsref/met_win_clearinterval.asp)
 
-### Author
+## Author
 
 - [John M Darrin - Website](johnmdarrin.com)
 - Reference: [tomatoTimer.com](https://tomato-timer.com/)
