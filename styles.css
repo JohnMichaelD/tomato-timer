@@ -51,6 +51,10 @@ header {
     gap: 15px;
 }
 
+.settingsContainer {
+    padding-bottom: 2.5rem;
+}
+
 
 .button {
     height: 45px;
