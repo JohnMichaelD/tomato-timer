@@ -48,29 +48,29 @@ You can also stop the timer at anytime, re-start the timer, or reset the timer t
 - CSS3
 - Adobe XD
 - Mobile First Design
+- Webkit
 
 ### What I Learned
 
 - JS Timer Functionality 
 - [Webkit](https://webkit.org/)
-- timer in js
-- setInterval()
-    Calling setInterval in multiple functions did not work, it would multiple the interval count each time it was called, which makes sense, but was not the solution i was hoping for. 
-
-    at a point, clicking 'start' when the timer was already counting down, would accelerate the countdown, multiplied by each click, 'stop' would no longer work, and reset would work, but the countdown would still be as fast.
-
-    removed initial decleration of setInterval, only in start function now
-        - fixed stop not working, did not fix speed
-
-- setTimeout()
+- setInterval() caused the most issues for me:
+    - I came across an issue when I wanted to use setInterval in multiple functions. This caused a few issues. Each time setInterval was called, it would multiply in speed by the number of times it was called.
+    - For example, clicking 'start' when the timer was already counting down, would accelerate the countdown, it would increase in speed with each click, 'stop' would no longer work even with calling clearInterval, and reset would work, but the countdown would still be just as fast.
+    - I figured how best to call setInterval, I removed the global setInterval, added it into the 'start' eventListener. 
+    - This allowed the stop eventListern to function correctly, however it did not fix the acceleration issue.
+    - By adding a simply 'on' / 'off' switch of sorts, I was able to fix the problem.
 - clearInterval()
-    - I was able to use clearInterval() to pause the timer. 
+    - I was able to use clearInterval() to pause the timer when the 'stop' eventListener was called.
+- `${}`
 
 ### Continued Development
 
-This was a great project, and I truly learned a lot!
+I would like to come back to this project and add sound (an alarm) for when the timer hits 00:00.
 
-I would like to come back to this project and add sound for when the alarm hits 00:00.
+I would like to update the document title in the browser tab to update and reflect the timer countdown.
+
+I find that when changing the time of the counter, it seems to JUMP over the first sec iteration. I would like to fix that. Using setTimeout did not seem to do what I wanted.
 
 I would also like to practice a bit on my CSS skills, and make the clock look more like a [retro 90's alarm clock](https://pictures.depop.com/b0/6331641/496631841_Vz5Zqg9wdm/P0.jpg)!
 
