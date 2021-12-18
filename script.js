@@ -6,9 +6,10 @@ let stopElem = document.querySelector('.stop');
 let resetElem = document.querySelector('.reset');
 let timerElem = document.querySelector('.timer');
 
-const startTiming = .15;
+const startTiming = 25;
 let time = startTiming * 60;
 
+let timer = 'off';
 
 pomodoroElem.addEventListener('click', () => {
     console.log("pomodoro");
@@ -18,26 +19,31 @@ pomodoroElem.addEventListener('click', () => {
 });
 
 shortBreakElem.addEventListener('click', () => {
-    console.log("shortbreak");
+    console.log("short break");
     time = 300;
     setTimeout(() => {
         updateTimer(time); }, 1000);
 });
 
 longBreakElem.addEventListener('click', () => {
-    console.log("longbreak");
+    console.log("long break");
     time = 600;
-    setTimeout(() => {
-        updateTimer(time); }, 1000);
+    updateTimer(time);
 });
-
 
 startElem.addEventListener('click', () => {
     console.log("start");
+
+    if (timer === 'off') {
+        myInterval = setInterval(updateTimer, 1000);
+        timer = 'on';
+    };
+    
 });
 
 stopElem.addEventListener('click', () => {
     console.log("stop");
+    timer = 'off';
     clearInterval(myInterval);
 });
 
@@ -48,7 +54,7 @@ resetElem.addEventListener('click', () => {
 });
 
 function updateTimer(){
-    let minutes = Math.floor(time/60);
+    let minutes = Math.floor(time / 60);
     let seconds = time % 60;
 
     minutes = minutes < 10 ? '0' + minutes : minutes;
@@ -60,5 +66,3 @@ function updateTimer(){
         clearInterval(myInterval);
     }
 };
-
-myInterval = setInterval(updateTimer, 1000);
