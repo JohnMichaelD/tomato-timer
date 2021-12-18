@@ -113,6 +113,7 @@ header {
 }
 
 footer {
+    margin-top: 15px;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -158,6 +159,6 @@ a:link {
     gap: 10px;
 }
 .buttonsContainer {
-    margin-top: 120px;
+    margin-top: 100px;
 }
 }
