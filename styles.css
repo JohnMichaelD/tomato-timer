@@ -51,9 +51,6 @@ header {
     gap: 15px;
 }
 
-.buttonsContainer {
-    margin-top: 100px;
-}
 
 .button {
     height: 45px;
@@ -114,12 +111,20 @@ header {
     background-color: gray;
 }
 
+.source {
+    color: black;
+}
+
 @media (max-width: 750px) {
     
-    .buttonsContainer,
-    .settingsContainer {
+.buttonsContainer,
+.settingsContainer {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
+.buttonsContainer {
+    margin-top: 100px;
+}
+
 }
