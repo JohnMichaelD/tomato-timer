@@ -6,26 +6,31 @@ let stopElem = document.querySelector('.stop');
 let resetElem = document.querySelector('.reset');
 let timerElem = document.querySelector('.timer');
 
-let counter = 0;
-let timeLeft = 65;
+const startTiming = .15;
+let time = startTiming * 60;
+
 
 pomodoroElem.addEventListener('click', () => {
     console.log("pomodoro");
-    counter = 25;
-    updateTimer(counter);
+    time = 1500;
+    setTimeout(() => {
+        updateTimer(time); }, 1000);
 });
 
 shortBreakElem.addEventListener('click', () => {
     console.log("shortbreak");
-    counter = 5;
-    updateTimer(counter);
+    time = 300;
+    setTimeout(() => {
+        updateTimer(time); }, 1000);
 });
 
 longBreakElem.addEventListener('click', () => {
     console.log("longbreak");
-    counter = 10;
-    updateTimer(counter);
+    time = 600;
+    setTimeout(() => {
+        updateTimer(time); }, 1000);
 });
+
 
 startElem.addEventListener('click', () => {
     console.log("start");
@@ -33,28 +38,27 @@ startElem.addEventListener('click', () => {
 
 stopElem.addEventListener('click', () => {
     console.log("stop");
+    clearInterval(myInterval);
 });
 
 resetElem.addEventListener('click', () => {
     console.log("reset");
-    timerElem.innerHTML = timer;
+    time = 1500;
+    updateTimer(time);
 });
 
-function convertSeconds(s) {
-    let min = Math.floor(s / 60);
-    let sec = s % 60;
-    return nf(min,2) + ":" + nf(sec,2);
-}
+function updateTimer(){
+    let minutes = Math.floor(time/60);
+    let seconds = time % 60;
 
+    minutes = minutes < 10 ? '0' + minutes : minutes;
+    seconds = seconds < 10 ? '0' + seconds : seconds;
+    timerElem.innerHTML  = `${minutes}:${seconds}`;
+    time--;
 
-function updateTimer(counter){
-    timerElem.innerHTML = convertSeconds((timeLeft - counter));
-    return counter;
+    if (time < 0) {
+        clearInterval(myInterval);
+    }
 };
 
-function timerStart(){
-    counter++;
-    timerElem.innerHTML = convertSeconds((timeLeft - counter));
-};
-
-setInterval(timerStart, 1000);
+myInterval = setInterval(updateTimer, 1000);
