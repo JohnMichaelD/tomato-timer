@@ -8,60 +8,59 @@ let timerElem = document.querySelector('.timer');
 
 const startTiming = 25;
 let time = startTiming * 60;
-
-let timer = 'off';
+let timerCheck = 'off';
 
 pomodoroElem.addEventListener('click', () => {
-    console.log("pomodoro");
+    //set time to 25 minutes
     time = 1500;
-    setTimeout(() => {
-        updateTimer(time); }, 1000);
+    updateTimer(time);
 });
 
 shortBreakElem.addEventListener('click', () => {
-    console.log("short break");
+    //set time to 5 minutes
     time = 300;
-    setTimeout(() => {
-        updateTimer(time); }, 1000);
+    updateTimer(time);
 });
 
 longBreakElem.addEventListener('click', () => {
-    console.log("long break");
+    //set time to 10 minutes
     time = 600;
     updateTimer(time);
 });
 
-startElem.addEventListener('click', () => {
-    console.log("start");
 
-    if (timer === 'off') {
+startElem.addEventListener('click', () => {
+    //confirms that start button has not already been clicked
+    if (timerCheck === 'off') {
         myInterval = setInterval(updateTimer, 1000);
-        timer = 'on';
-    };
-    
+        timerCheck = 'on';
+    } else
+    return 0;
 });
 
 stopElem.addEventListener('click', () => {
-    console.log("stop");
-    timer = 'off';
+    timerCheck = 'off';
     clearInterval(myInterval);
 });
 
 resetElem.addEventListener('click', () => {
-    console.log("reset");
+    //set time back to 25 minutes
     time = 1500;
     updateTimer(time);
 });
 
+//
 function updateTimer(){
     let minutes = Math.floor(time / 60);
     let seconds = time % 60;
 
+    //
     minutes = minutes < 10 ? '0' + minutes : minutes;
     seconds = seconds < 10 ? '0' + seconds : seconds;
     timerElem.innerHTML  = `${minutes}:${seconds}`;
     time--;
 
+    //stops count at 0, need to add alarm sound
     if (time < 0) {
         clearInterval(myInterval);
     }
