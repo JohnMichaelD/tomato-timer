@@ -72,7 +72,7 @@ I would like to update the document title in the browser tab to update and refle
 
 I find that when changing the time of the counter, it seems to JUMP over the first sec iteration. I would like to fix that. Using setTimeout did not seem to do what I wanted.
 
-I would also like to practice a bit on my CSS skills, and make the clock look more like a [retro 90's alarm clock](https://pictures.depop.com/b0/6331641/496631841_Vz5Zqg9wdm/P0.jpg)!
+I would also like to practice a bit on my CSS skills, and make the clock look more like a [retro 90's alarm clock](https://pictures.depop.com/b0/6331641/496631841_Vz5Zqg9wdm/P0.jpg)! As well as bring the design to a more modern look.
 
 ### Useful Resources
 
