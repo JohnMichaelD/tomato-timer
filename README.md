@@ -23,7 +23,7 @@ I was inspired to build an app similar to the website; [Tomato-Timer.com](https:
 
 ### App Breakdown
 
-This application is a coundown timer that assists those using the [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique). 
+This application is a countdown timer that assists those using the [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique). 
 
 The app gives you the choice to set the timer to either 25 minutes, or a series of breaks, 10 minutes for a long break, or 5 minutes for a short break.
 
@@ -58,11 +58,12 @@ You can also stop the timer at anytime, re-start the timer, or reset the timer t
     - I came across an issue when I wanted to use setInterval in multiple functions. This caused a few issues. Each time setInterval was called, it would multiply in speed by the number of times it was called.
     - For example, clicking 'start' when the timer was already counting down, would accelerate the countdown, it would increase in speed with each click, 'stop' would no longer work even with calling clearInterval, and reset would work, but the countdown would still be just as fast.
     - I figured how best to call setInterval, I removed the global setInterval, added it into the 'start' eventListener. 
-    - This allowed the stop eventListern to function correctly, however it did not fix the acceleration issue.
+    - This allowed the stop eventListener to function correctly, however it did not fix the acceleration issue.
     - By adding a simply 'on' / 'off' switch of sorts, I was able to fix the problem.
 - clearInterval()
     - I was able to use clearInterval() to pause the timer when the 'stop' eventListener was called.
 - `${}`
+- I am  currently experience an issue with what I see using 
 
 ### Continued Development
 
@@ -73,6 +74,8 @@ I would like to update the document title in the browser tab to update and refle
 I find that when changing the time of the counter, it seems to JUMP over the first sec iteration. I would like to fix that. Using setTimeout did not seem to do what I wanted.
 
 I would also like to practice a bit on my CSS skills, and make the clock look more like a [retro 90's alarm clock](https://pictures.depop.com/b0/6331641/496631841_Vz5Zqg9wdm/P0.jpg)! As well as bring the design to a more modern look.
+
+Horizontal orientation of mobile view needs to be fixed. Fixed 12.18.21.
 
 ### Useful Resources
 

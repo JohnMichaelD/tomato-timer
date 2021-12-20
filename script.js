@@ -5,6 +5,7 @@ let startElem = document.querySelector('.start');
 let stopElem = document.querySelector('.stop');
 let resetElem = document.querySelector('.reset');
 let timerElem = document.querySelector('.timer');
+let tabTimerElem = document.querySelector('.tabTimer');
 
 const startTiming = 25;
 let time = startTiming * 60;
@@ -58,6 +59,7 @@ function updateTimer(){
     minutes = minutes < 10 ? '0' + minutes : minutes;
     seconds = seconds < 10 ? '0' + seconds : seconds;
     timerElem.innerHTML  = `${minutes}:${seconds}`;
+    tabTimerElem.innerHTML  = `(${minutes}:${seconds})`;
     time--;
 
     //stops count at 0, need to add alarm sound
