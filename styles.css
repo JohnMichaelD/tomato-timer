@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+
 @-webkit-keyframes blinker {
     from { opacity: 1.0; }
     to { opacity: 0.0; }
@@ -41,6 +42,7 @@ header {
 
 .subtitle {
     font-size: 30px;
+    cursor: pointer;
 }
 
 .buttonsContainer,
@@ -96,7 +98,7 @@ header {
     /*-webkit-animation-name: blinker;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: cubic-bezier(.5, 0, 1, 1);
-    -webkit-animation-duration: 1s;*/
+    -webkit-animation-duration: .6s;*/
 }
 
 .pomodoroButton,

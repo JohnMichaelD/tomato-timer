@@ -10,6 +10,7 @@ let tabTimerElem = document.querySelector('.tabTimer');
 const startTiming = 25;
 let time = startTiming * 60;
 let timerCheck = 'off';
+let alarmSound = new Audio('alarm.mp3');
 
 pomodoroElem.addEventListener('click', () => {
     //set time to 25 minutes
@@ -19,7 +20,7 @@ pomodoroElem.addEventListener('click', () => {
 
 shortBreakElem.addEventListener('click', () => {
     //set time to 5 minutes
-    time = 300;
+    time = 10;
     updateTimer(time);
 });
 
@@ -62,8 +63,15 @@ function updateTimer(){
     tabTimerElem.innerHTML  = `(${minutes}:${seconds})`;
     time--;
 
-    //stops count at 0, need to add alarm sound
+    //stops count at 0
     if (time < 0) {
         clearInterval(myInterval);
+        alarm();
     }
 };
+
+//plays alarm when called, sets timer to off position so you can start next timer
+function alarm() {
+    alarmSound.play();
+    timerCheck = 'off';
+}
