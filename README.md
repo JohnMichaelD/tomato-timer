@@ -69,7 +69,7 @@ You can also stop the timer at anytime, re-start the timer, or reset the timer t
 
 I would like to come back to this project and add sound (an alarm) for when the timer hits 00:00.
 
-I would like to update the document title in the browser tab to update and reflect the timer countdown.
+I would like to update the document title in the browser tab to update and reflect the timer countdown. Fixed 12.19.21.
 
 I find that when changing the time of the counter, it seems to JUMP over the first sec iteration. I would like to fix that. Using setTimeout did not seem to do what I wanted.
 
