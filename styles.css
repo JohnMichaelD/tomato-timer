@@ -69,6 +69,13 @@ header {
     border: white solid 3px;
 }
 
+button:hover {
+    background-color: rgb(21, 220, 255);
+    color: black;
+}
+
+/*rgba(173, 220, 247, 0.3);*/
+
 .timerContainer {
     height: 100px;
     width: 200px;

@@ -70,7 +70,7 @@ function updateTimer(){
     }
 };
 
-//plays alarm when called, sets timer to off position so you can start next timer
+//plays alarm when called, sets timer to off position so you can restart timer
 function alarm() {
     alarmSound.play();
     timerCheck = 'off';
