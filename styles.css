@@ -88,13 +88,6 @@ button:hover {
     border: solid 7px rgb(39, 39, 39);
 }
 
-/* need to add js alarm sound function
-.alarm {
-    height: 3px;
-    width: 3px;
-    background-color: red;
-}*/
-
 .timer {
     font-size: 70px;
     font-family: 'Share Tech Mono', monospace;
@@ -198,4 +191,14 @@ flex-direction: row;
     width: 150px;
 }
 
+}
+
+@media (max-height: 685px) {
+    .timerContainer{
+        margin: 20px;
+    }
+
+    button {
+        position: relative;
+    }
 }

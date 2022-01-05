@@ -31,7 +31,7 @@ You can also stop the timer at anytime, re-start the timer, or reset the timer t
 
 ### Screenshot
 
-![Screenshot](screenshot.png)
+![Screenshot](screenshot2.png)
 
 ### Links
 
