@@ -37,7 +37,7 @@ You can also stop the timer at anytime, re-start the timer, or reset the timer t
 
 - [Live View](https://johnmichaeld.github.io/tomato-timer/)
 - [Github Repository](https://github.com/JohnMichaelD/tomato-timer)
-- [Website](johnmdarrin.com)
+- [Website](https://johnmichaeld.github.io/portfolio/)
 
 ## My Process
 
@@ -67,15 +67,19 @@ You can also stop the timer at anytime, re-start the timer, or reset the timer t
 
 ### Continued Development
 
-I would like to come back to this project and add sound (an alarm) for when the timer hits 00:00.
+- I would like to come back to this project and add sound (an alarm) for when the timer hits 00:00. **Updated 1/22.**
 
-I would like to update the document title in the browser tab to update and reflect the timer countdown. Fixed 12.19.21.
+- I would like to update the document title in the browser tab to update and reflect the timer countdown. **Updated 12.19.21.**
 
-I find that when changing the time of the counter, it seems to JUMP over the first sec iteration. I would like to fix that. Using setTimeout did not seem to do what I wanted.
+- I find that when changing the time of the counter, it seems to JUMP over the first sec iteration. I would like to fix that. Using setTimeout did not seem to do what I wanted.
 
-I would also like to practice a bit on my CSS skills, and make the clock look more like a [retro 90's alarm clock](https://pictures.depop.com/b0/6331641/496631841_Vz5Zqg9wdm/P0.jpg)! As well as bring the design to a more modern look.
+- I would also like to practice a bit on my CSS skills, and make the clock look more like a [retro 90's alarm clock](https://pictures.depop.com/b0/6331641/496631841_Vz5Zqg9wdm/P0.jpg)! As well as bring the design to a more modern look.
 
-Horizontal orientation of mobile view needs to be fixed. Fixed 12.18.21.
+- Horizontal orientation of mobile view needs to be fixed. **Updated 12.18.21.**
+
+- On mobile, buttons become sticky when 'hovered', and don't return to their normal state. Would like to fix. 
+
+- I would like to add the ability for the user to customize their break times.
 
 ### Useful Resources
 
@@ -85,8 +89,9 @@ Horizontal orientation of mobile view needs to be fixed. Fixed 12.18.21.
 - [setTimeout()](https://www.sitepoint.com/delay-sleep-pause-wait/)
 - [setTimeout()](https://stackoverflow.com/questions/8539079/how-to-start-and-stop-pause-setinterval)
 - [clearInterval()](https://www.w3schools.com/jsref/met_win_clearinterval.asp)
+- [sticky hover effects](https://stackoverflow.com/questions/17233804/how-to-prevent-sticky-hover-effects-for-buttons-on-touch-devices)
 
 ## Author
 
-- [John M Darrin - Website](johnmdarrin.com)
+- [John M Darrin - Portfolio](https://johnmichaeld.github.io/portfolio/)
 - Reference: [tomatoTimer.com](https://tomato-timer.com/)
