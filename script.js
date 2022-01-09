@@ -20,7 +20,7 @@ pomodoroElem.addEventListener('click', () => {
 
 shortBreakElem.addEventListener('click', () => {
     //set time to 5 minutes
-    time = 300;
+    time = 5;
     updateTimer(time);
 });
 
